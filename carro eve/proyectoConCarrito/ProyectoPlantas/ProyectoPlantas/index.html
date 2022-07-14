@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+    
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="two columns">
+                    <img src="img/logo.png" alt="" id="logo">
+                </div>
+
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" alt="" id="img-carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar carrito</a>
+                                <a href="#" id="procesar-pedido" class="button u-full-width">Procesar compra</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="eight columns">
+                        <ul class="navct">
+                            <li class="two columns"><a href="index.html">Inicio</a></li>
+                            <li class="two columns"><a href="sobre.html">Nosotros</a></li>
+                            <li class="three columns"><a href="contacto.html">Donaciones</a></li>
+                            <li class="two columns"><a href="registro.html">Registro</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>Solicita tu planta favorita</h2>
+                        <p id="phero">Todas las plantas que gustes</p>
+                        <!--<form action="#" id="busqueda" method="post" class="formulario">
+                            <input class="u-full-width" type="text" 
+                            placeholder="¿Que te gustaria comprar?"
+                            id="buscador"
+                            >
+                            <input type="submit" id="submit-buscador" class="submit-buscador">
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p>200 Tipos de plantas<br>
+                        Explora los tipos mas recientes
+                    </p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p>Expertos en plantas<br>
+                        Explora los distintos tipos
+                    </p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p>Plantas de calidad<br>
+                        100% Natural
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lista-productos" class="container">
+        <h1 id="encabezado" class="encabezado">Pedidos en linea</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/planta1 (1).jpg" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Susan variegada</h4>
+                        <p>(LENGUA DE SUEGRA)</p>
+                        <p class="precio">$6000<span class="u-pull-right">$5000</span></p>
+                        <a href="" 
+                        class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/planta2 (1).jpg" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Mariana XL</h4>
+                        <p>(MONSTERA DELICIOSA)</p>
+                        <p class="precio">$7000 <span class="u-pull-right">$4000</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/planta3 (1).jpg" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Lucas L</h4>
+                        <p>PHILODENDRO LONGIFOLIO</p>
+                        <p class="precio">$8000 <span class="u-pull-right">$6000</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/orquidea.JPG" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Orquidea</h4>
+                        <p class="precio">$17000 <span class="u-pull-right">$15000</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ficcus.JPG" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Ficcus</h4>
+                        <p class="precio">$10000 <span class="u-pull-right">$8500</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="5">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/corona.JPG" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Corona del inca</h4>
+                        <p class="precio">$10000 <span class="u-pull-right">$9000</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="6">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/helecho.JPG" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Helecho peineta</h4>
+                        <p class="precio">$1900 <span class="u-pull-right">$1600</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/nante.JPG" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Planta nante bella</h4>
+                        <p class="precio">$9000 <span class="u-pull-right">$8500</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="8">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/suculenta.JPG" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Suculenta portulaca Afra Jade</h4>
+                        <p class="precio">$6000 <span class="u-pull-right">$5000</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="9">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/peperomia.JPG" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Peperomia caperata</h4>
+                        <p class="precio">$4000 <span class="u-pull-right">$3200</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="10">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/diplademia.JPG" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Diplademia</h4>
+                        <p class="precio">$6000 <span class="u-pull-right">$5000</span></p>
+                        <a href="#" 
+                        class="u-full-width button-primary button input agregar-carrito
+                        " data-id="11">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/yucca.JPG" class="u-full-width">
+                    <div class="info-card">
+                        <h4>Planta interior y exterior yucca</h4>
+                        <p class="precio">$25000 <span class="u-pull-right">$22000</span></p>
+                        <a href="#" 
+                            class="u-full-width button-primary button input agregar-carrito" data-id="12">
+                            Agregar Al Carrito
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="container-boton">
+        <a href="https://api.whatsapp.com/send?phone=56957226127">
+            <img class="boton" src="img/wp.png" alt="">
+        </a>
+
+    </div>
+    
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>Acerca de nosotros</h6>
+              <p class="text-justify"> Queremos llevar las plantas a los distintos rincones de la ciudad,
+                aportando así nuestro granito de arena en construir un mundo más verde.</p>
+            </div>
+  
+            <div class="four columns">
+              <h6>Menú</h6>
+              <ul class="footer-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Nosotros</a></li>
+                <li><a href="#">Donaciones</a></li>
+                <li><a href="#">Registro</a></li>
+              </ul>
+            </div>
+  
+            <div class="four columns">
+              <h6>Links</h6>
+              <ul class="footer-links">
+                <li><a href="https://api.whatsapp.com/send?phone=56957226127">Envíanos un mensaje por whatsapp</a></li>
+                <li><a href="tel:56957226127">Llámanos</a></li>
+                <li><a href="mailto:Green.world@gmail.cl">Escríbenos</a></li>
+                <li><a href="https://www.instagram.com/theincredibleevelyn/">Visita nuestro instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+           <a href="file:///C:/Users/eve/Desktop/ProyectoPlantas/index.html">Green world</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              
+            </div>
+          </div>
+        </div>
+  </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+</body>
+</html>
